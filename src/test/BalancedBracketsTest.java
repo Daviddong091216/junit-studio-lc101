@@ -42,7 +42,10 @@ public class BalancedBracketsTest {
     public void stringMixTwoBracketsReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("I [Love] you[Miley]."));
     }
-
+    @Test
+    public void Test1() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("I ]Love[ you Miley."));
+    }
 
 
 }
